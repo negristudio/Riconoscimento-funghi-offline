@@ -614,7 +614,7 @@ jobs:
 
       - name: Installa le librerie
         run: |
-          pip install --index-url https://download.pytorch.org/whl/cpu "torch==2.14.*"
+          pip install --index-url https://download.pytorch.org/whl/cpu "torch==2.14.*" torchvision
           pip install "timm==1.0.30" "onnx==1.23.*" "onnxruntime==1.29.*" pillow numpy requests
 
       - name: Scarica e converti il modello (Danish Fungi 2020)
